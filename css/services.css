@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #d1d1d1;
+    background-position: center;
+    color: #fff;
+}
+
+.logo {
+    width: 200px;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+}
+
+a:hover {
+    transition: .3s;
+    color: #ffa70f;
+}
+
+a:not(:hover) {
+    transition: .3s;
+    color: #fff;
+}
+
+header {
+    position: relative, fixed;
+    padding: 0 2rem;
+    padding-bottom: 60px;
+
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar .links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.button {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    width: 150px;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: #5d5d7e;
+    color: #eee;
+}
+
+.button:hover {
+    transition: .3s;
+    color: #5d5d7e;
+    background-color: #eee;
+}
+
+.button:not(:hover) {
+    transition: .3s;
+    background-color: #5d5d7e;
+    color: #eee;
+}
+
+.navbar .toggle-btn {
+    color: #101010;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 90px;
+    height: 0;
+    width: 300px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 20;
+}
+
+.dropdown_menu.open {
+    height: 290px;
+    margin-top: 70px;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 992px) {
+    .navbar .links {
+        display: none;
+    }
+
+    .navbar .toggle-btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media(max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.container{
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    width: auto;
+    height: 90%;
+    
+}
+
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    height: 90%;
+
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    gap: 130px;
+}
+
+.btn_menu{ 
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgb(244, 190, 43) 10px 10px 90px 10px;
+    background-image: linear-gradient(to top, #f6da23 100%, transparent);
+    backdrop-filter: blur(30px);
+    ;
+}
+
+.btn_menu:hover{
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.btn_menu:not(:hover){
+    transform: scale(1);
+    transition: .5s;
+}
+
+@media(max-width: 940px){
+    .buttons{
+        display: block;
+    }
+    .btn_menu{
+        margin-top: 40px;
+    }
+}
+
+.section{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 100%;
+    background-color: darkseagreen;
+    justify-content: center;
+}
+
+.head{
+    position: absolute;
+    background-color: #5d5d7e;
+    margin-bottom: 40px;
+    margin: 20px 20px 40px 20px;
+    padding: 60px;
+    
+}
+
+.section .services{
+    position: relative;
+    display: flex;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-color: #5d5d7e;
+    margin-top: 20%;
+    font-size: 40px;
+    justify-content: center;
+}
+
+.content{
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and(max-width: 479px){
+
+}
+
+@media only screen and(min-width: 480px) and (max-width: 767px){
+
+}
+
+@media only screen and(min-width: 768px) and (max-width: 833px){
+
+}
+
+@media only screen and(min-width: 834px) and (max-width: 1023px){
+
+}
+
+@media only screen and(min-width: 1024px) and (max-width: 1023px){
+
+}
+
+@media only screen and(min-width: 1024px){
+
+}
