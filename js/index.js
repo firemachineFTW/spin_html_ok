@@ -56,13 +56,6 @@ const toggleBtn = document.querySelector('.toggle-btn')
                     next.click();
                 }, 5000)
             }
-        
-function scrollToSection(sectionId){
-    const section = document.getElementById(sectionId);
-    if(section){
-        section.scrollIntoView({behavior: 'smooth'});
-    }
-}
 
 let currentLanguage = 'en'; // Establece el idioma predeterminado
 
@@ -75,12 +68,18 @@ function updateContent() {
     fetch(`${currentLanguage}.json`)
     .then(response => response.json())
     .then(data => {
-        document.querySelectorAll('btn-home').textContent = data.btn_home;
-        document.getElementById('btn-about').textContent = data.btn_about;
-        document.getElementById('btn-services').textContent = data.btn_services;
-        document.getElementById('btn-contact').textContent = data.btn_contact;
+        document.getElementById('tittle-home').textContent = data.btn_home;
+        document.getElementById('link-home').textContent = data.btn_home;
+        document.getElementById('link-about').textContent = data.btn_about;
+        document.getElementById('link-services').textContent = data.btn_services;
+        document.getElementById('link-contact').textContent = data.btn_contact;
+
         document.getElementById('slogan').textContent = data.slogan;
+        document.getElementById('quienes-somos').textContent = data.quienes_somos;
         document.getElementById('quienes-somos-p').textContent = data.quienes_somos_p;
+        //document.getElementById('seguridad-i').textContent = data.seguridad_i;
+        //document.getElementById('seguridad-p').textContent = data.seguridad_p;
+        
         // Actualiza más textos aquí según sea necesario
     })
     .catch(error => console.error('Error loading language file:', error));
