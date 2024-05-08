@@ -79,10 +79,19 @@ function updateContent() {
         document.getElementById('link-contact').textContent = data.btn_contact;
 
         document.getElementById('slogan').textContent = data.slogan;
-        document.getElementById('quienes-somos').textContent = data.quienes_somos;
-        document.getElementById('quienes-somos-p').textContent = data.quienes_somos_p;
-        //document.getElementById('seguridad-i').textContent = data.seguridad_i;
-        //document.getElementById('seguridad-p').textContent = data.seguridad_p;
+        
+        document.querySelectorAll('.quienes-somos').forEach(element => {
+            element.textContent = data.quienes_somos;
+        });
+        document.querySelectorAll('.quienes-somos-p').forEach(element => {
+            element.textContent = data.quienes_somos_p;
+        });
+        document.querySelectorAll('.seguridad-i').forEach(element => {
+            element.textContent = data.seguridad_i;
+        });
+        document.querySelectorAll('.seguridad-p').forEach(element => {
+            element.textContent = data.seguridad_p;
+        });
         
         // Actualiza más textos aquí según sea necesario
     })
