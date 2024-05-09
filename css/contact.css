@@ -153,33 +153,37 @@ header {
     top: 10%;
 }
 
-.contact .container{
+.contact{
     position: relative;
-    display: flex;
-    justify-content: center;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
 
 .contact .container .content{
     background-color: #fff;
     border-radius: 20px;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 20px 10px;
     font-size: 20px;
     color: #000;
     padding: 25px;
     width: 400px;
-    flex-grow: 1;
     
 }
 
-.contact .form-container form{
+.form-container{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex: 2;
+    justify-content: space-between;
+    margin: 10%;
 }
 
-.contact .form-container input{
-    width: 300px;
-    height: 40px;
+.form-container input{
+    width: 15em;
+    height: 1.5em;
     display: flex;
     border-radius: 20px;
     padding: 20px;
@@ -187,6 +191,20 @@ header {
     box-shadow: 0px 0px 50px 3px #000;
     color: #000;
     outline: none;
+    margin: 20px;
+    font-size: 2em;
+}
+
+.form-container textarea{
+    width: 300px;
+    height: 100px;
+    display: flex;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0px 0px 50px 3px #000;
+    outline: none;
+    margin: 20px;
 }
 
 .contact .form-container button{
@@ -194,6 +212,7 @@ header {
     height: 50px;
     border: none;
     border-radius: 10px;
-    background-image: linear-gradient(to top, #d3d030 50%, transparent);
+    background-image: linear-gradient(to right, #d3d030 50%, transparent);
     font-size: larger;
+    margin-top: 30px;
 }

@@ -42,62 +42,71 @@
             <li><a href="contact.html">Contact</a></li>
         </div>
     </header>
-    <section class="contact">
+    <div class="contact">
         <div class="container">
-            <div class="content">
-                <h2>Zona Centro</h2>
-                <p>Calle Santo Domingo #6 Col. La preciosa 02460
-                    Azcapotzalco CDMX
-                </p>
-                <p>Responsable: Mayra E. Galeote Rodriguez.</p>
-                <ul class="info">
-                    <li><i class="uil uil-envelope-edit"> contacto@s-spin.com.mx</i></li>
-                    <li><i class="uil uil-phone"> 55 5347 0247</i></li>
-                    <li><i class="uil uil-mobile-android"> 55 3970 6434</i></li>
-                </ul> 
+            <div class="info-container">
+                <div class="content">
+                    <h2>Zona Centro</h2>
+                    <p>Calle Santo Domingo #6 Col. La preciosa 02460
+                        Azcapotzalco CDMX
+                    </p>
+                    <p>Responsable: Mayra E. Galeote Rodriguez.</p>
+                    <ul class="info">
+                        <li><i class="uil uil-envelope-edit"> contacto@s-spin.com.mx</i></li>
+                        <li><i class="uil uil-phone"> 55 5347 0247</i></li>
+                        <li><i class="uil uil-mobile-android"> 55 3970 6434</i></li>
+                    </ul> 
+                </div>
+                <div class="content">
+                    <h2>Zona Este</h2>
+                    <p>Ocaso 21, Boreal y Orion, Tala. 45310, Jalisco.</p>
+                    <p>Responsable: Jacobo Lopez Nicolas.</p>
+                    <ul class="info">
+                        <li><i class="uil uil-envelope-edit"> jlopez@s-spin.com.mx</i></li>
+                        <li><i class="uil uil-mobile-android"> 55 1758 1978</i></li>
+                    </ul> 
+                </div>
+                <div class="content">
+                    <h2>Zona Norte</h2>
+                    <p>Jardines de Andalucia, Guadalupe NL, 67193.</p>
+                    <p>Responsable: Mario Alberto Leon Cruz.</p>
+                    <ul class="info">
+                        <li><i class="uil uil-envelope-edit"> mleon@s-spin.com.mx</i></li>
+                        <li><i class="uil uil-mobile-android"> 55 1304 8078</i></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h2>Zona Norte</h2>
+                    <p>Jardines de Andalucia, Guadalupe NL, 67193.</p>
+                    <p>Responsable: Mario Alberto Leon Cruz.</p>
+                    <ul class="info">
+                        <li><i class="uil uil-envelope-edit"> mleon@s-spin.com.mx</i></li>
+                        <li><i class="uil uil-mobile-android"> 55 1304 8078</i></li>
+                    </ul>
+                </div>
             </div>
-            <div class="content">
-                <h2>Zona Este</h2>
-                <p>Ocaso 21, Boreal y Orion, Tala. 45310, Jalisco.</p>
-                <p>Responsable: Jacobo Lopez Nicolas.</p>
-                <ul class="info">
-                    <li><i class="uil uil-envelope-edit"> jlopez@s-spin.com.mx</i></li>
-                    <li><i class="uil uil-mobile-android"> 55 1758 1978</i></li>
-                </ul> 
-            </div>
-            <div class="content">
-                <h2>Zona Norte</h2>
-                <p>Jardines de Andalucia, Guadalupe NL, 67193.</p>
-                <p>Responsable: Mario Alberto Leon Cruz.</p>
-                <ul class="info">
-                    <li><i class="uil uil-envelope-edit"> mleon@s-spin.com.mx</i></li>
-                    <li><i class="uil uil-mobile-android"> 55 1304 8078</i></li>
-                </ul>
-            </div>
-            <div class="content">
-                <h2>Zona Norte</h2>
-                <p>Jardines de Andalucia, Guadalupe NL, 67193.</p>
-                <p>Responsable: Mario Alberto Leon Cruz.</p>
-                <ul class="info">
-                    <li><i class="uil uil-envelope-edit"> mleon@s-spin.com.mx</i></li>
-                    <li><i class="uil uil-mobile-android"> 55 1304 8078</i></li>
-                </ul>
+            <div class="form-container">
+                <form action="">
+                    <h1>CONTACTO</h1>
+
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+    
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="email@example.com" required>
+    
+                    <label for="number">Telefono</label>
+                    <input type="number" name="number" id="number" placeholder="Number" required>
+    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+    
+                    <button type="submit">Send</button>
+                </form>
             </div>
         </div>
-        <div class="form-container">
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="email@example.com" required>
-                <label for="number">Telefono</label>
-                <input type="number" name="number" id="number" placeholder="Number" required>
-                <label for="message">Message</label>
-                <input type="tel" name="message" id="message" placeholder="Message" required>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-    </section>
+    </div>
+    
     <script type="text/javascript" src="./js/contact.js"></script>
 </body>
 </html>
