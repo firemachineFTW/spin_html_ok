@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     margin-top: 10px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
@@ -153,13 +153,9 @@ header {
     top: 10%;
 }
 
-.contact{
-    position: relative;
-}
-
 .container{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -176,27 +172,36 @@ header {
 
 .form-container{
     display: flex;
-    flex: 2;
-    justify-content: space-between;
-    margin: 10%;
+    flex: 1;
+    justify-content: center;
+    margin: 0px auto 0px;
+}
+
+.form-container h1{
+    font-size: 3em;
+    margin-bottom: 1em;
+    color: #000;
+    letter-spacing: 5px;
+    
+    
 }
 
 .form-container input{
-    width: 15em;
-    height: 1.5em;
+    width: 20em;
+    height: 2em;
     display: flex;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 20px;
     border: none;
     box-shadow: 0px 0px 50px 3px #000;
     color: #000;
     outline: none;
-    margin: 20px;
-    font-size: 2em;
+    margin: 10px 0px 10px;
+    font-size: 1.5em;
 }
 
 .form-container textarea{
-    width: 300px;
+    width: 20em;
     height: 100px;
     display: flex;
     border-radius: 20px;
@@ -204,7 +209,12 @@ header {
     border: none;
     box-shadow: 0px 0px 50px 3px #000;
     outline: none;
-    margin: 20px;
+    margin: 10px 0px 10px;
+    font-size: 1.5em;
+}
+
+.form-container label{
+    font-size: 1.5em;
 }
 
 .contact .form-container button{
@@ -215,4 +225,14 @@ header {
     background-image: linear-gradient(to right, #d3d030 50%, transparent);
     font-size: larger;
     margin-top: 30px;
+}
+
+.form-container button:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.form-container button:not(:hover){
+    transform: scale(1);
+    transition: .5s;
 }
