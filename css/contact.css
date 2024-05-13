@@ -15,7 +15,7 @@ body {
 
 .logo {
     width: 150px;
-    margin-top: 10px;
+    margin-top: 5px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -28,7 +28,7 @@ li {
 a {
     text-decoration: none;
     color: #000;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 a:hover {
@@ -150,7 +150,7 @@ header {
 
 .contact{
     position: relative;
-    top: 10%;
+    top: 5%;
 }
 
 .container{
@@ -202,7 +202,7 @@ header {
 
 .form-container textarea{
     width: 20em;
-    height: 100px;
+    height: 7em;
     display: flex;
     border-radius: 20px;
     padding: 20px;
