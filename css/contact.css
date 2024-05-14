@@ -14,8 +14,7 @@ body {
 }
 
 .logo {
-    width: 150px;
-    margin-top: 5px;
+    width: 130px;   
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -42,15 +41,20 @@ a:not(:hover) {
 }
 
 header {
-    position: relative, fixed;
-    padding: 0 2rem;
-    padding-bottom: 60px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10rem;
+    padding-top: 0px;
+    background-color: #d1d1d1;; /* Ajusta el color de fondo según tu diseño */
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     width: 100%;
-    height: 60px;
+    height: 100px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -150,7 +154,7 @@ header {
 
 .contact{
     position: relative;
-    top: 5%;
+    top: 15%;
 }
 
 .container{
@@ -172,7 +176,6 @@ header {
 
 .form-container{
     display: flex;
-    flex: 1;
     justify-content: center;
     margin: 0px auto 0px;
 }
@@ -187,7 +190,7 @@ header {
 }
 
 .form-container input{
-    width: 20em;
+    width: 25em;
     height: 2em;
     display: flex;
     border-radius: 10px;
@@ -201,7 +204,7 @@ header {
 }
 
 .form-container textarea{
-    width: 20em;
+    width: 25em;
     height: 7em;
     display: flex;
     border-radius: 20px;

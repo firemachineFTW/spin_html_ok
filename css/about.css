@@ -195,7 +195,7 @@ header {
     position: relative;
     margin-top: 110px;
     display: flex;
-    font-size: 30px;
+    font-size: 1.5em;
     text-align: justify;
     background: rgba(36, 108, 209, 0.5);
     backdrop-filter: blur(30px);
