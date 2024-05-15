@@ -13,8 +13,7 @@ body {
 }
 
 .logo {
-    width: 150px;
-    margin-top: 5px;
+    width: 130px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -41,15 +40,20 @@ a:not(:hover) {
 }
 
 header {
-    position: relative, fixed;
-    padding: 0 2rem;
-    padding-bottom: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 10rem;
+    background-color: #d1d1d1;; 
+    z-index: 1000;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 
 }
 
 .navbar {
     width: 100%;
-    height: 60px;
+    height: 100px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -66,35 +70,31 @@ header {
     margin-top: 20px;
 }
 
-.button {
-    position: relative;
-    display: flex;
-    border-radius: 10px;
-    width: 150px;
-    justify-content: center;
-    border: none;
-    outline: none;
-    background-color: #5d5d7e;
-    color: #eee;
-}
-
-.button:hover {
-    transition: .3s;
-    color: #5d5d7e;
-    background-color: #eee;
-}
-
-.button:not(:hover) {
-    transition: .3s;
-    background-color: #5d5d7e;
-    color: #eee;
-}
-
 .navbar .toggle-btn {
     color: #101010;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
+}
+
+.btn-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn-list li{
+    display: inline;
+}
+
+.btn-list button{
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+}
+
+.languages .btn-list .active {
+    font-weight: bold; 
 }
 
 .dropdown_menu {
@@ -151,7 +151,7 @@ header {
     padding: 20px;
     margin-top: 20px;
     width: auto;
-    height: 90%;
+    height: 100%;
     
 }
 
@@ -160,7 +160,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: 90%;
+    height: 100%;
 
 }
 

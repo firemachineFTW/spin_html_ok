@@ -14,8 +14,7 @@ body {
 }
 
 .logo {
-    width: 150px;
-    margin-top: 5px;
+    width: 130px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(5px);
     border-radius: 20px;
@@ -56,7 +55,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
     z-index: 999;
 }
 
@@ -66,30 +64,6 @@ header {
     gap: 2rem;
     font-weight: bold;
     margin-top: 20px;
-}
-
-.button {
-    position: relative;
-    display: flex;
-    border-radius: 10px;
-    width: 150px;
-    justify-content: center;
-    border: none;
-    outline: none;
-    background-color: #5d5d7e;
-    color: #eee;
-}
-
-.button:hover {
-    transition: .3s;
-    color: #5d5d7e;
-    background-color: #eee;
-}
-
-.button:not(:hover) {
-    transition: .3s;
-    background-color: #5d5d7e;
-    color: #eee;
 }
 
 .navbar .toggle-btn {
@@ -116,8 +90,14 @@ header {
 }
 
 .languages .btn-list .active {
-    font-weight: bold; 
+    font-weight: bold;
+    background-color: #000;
+    color: #eee;
+    border: #eee;
+    transition: .5s; 
 }
+
+
 
 .dropdown_menu {
     display: none;

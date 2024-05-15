@@ -14,6 +14,10 @@ const toggleBtn = document.querySelector('.toggle-btn')
 let currentLanguage = 'en';
 
 function changeLanguage(language){
+    document.getElementById('btn-es').classList.remove('active');
+    document.getElementById('btn-en').classList.remove('active');
+    document.getElementById('btn-' + language).classList.add('active');
+
     currentLanguage = language;
     updateContent();
 }
