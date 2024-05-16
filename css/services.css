@@ -91,10 +91,14 @@ header {
     width: 2.5em;
     height: 2.5em;
     border-radius: 50%;
+    border: none;
 }
 
 .languages .btn-list .active {
     font-weight: bold; 
+    background-color: #000;
+    color: #eee;
+    transition: .5s;
 }
 
 .dropdown_menu {
@@ -148,6 +152,8 @@ header {
 
 .container{
     position: relative;
+    display: flex;
+    justify-content: center;
     padding: 20px;
     margin-top: 20px;
     width: auto;
@@ -203,15 +209,14 @@ header {
 
 .section{
     position: relative;
-    display: flex;
     width: auto;
-    height: 100%;
+    height: auto;
     background-color: darkseagreen;
     justify-content: center;
 }
 
 .head{
-    position: absolute;
+    position: relative;
     background-color: #5d5d7e;
     margin-bottom: 40px;
     margin: 20px 20px 40px 20px;
@@ -219,7 +224,7 @@ header {
     
 }
 
-.section .services{
+.services{
     position: relative;
     display: flex;
     padding: 20px;
