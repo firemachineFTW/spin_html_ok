@@ -44,7 +44,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0 10rem;
+    padding: 0 2rem;
     background-color: #d1d1d1;; 
     z-index: 1000;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
@@ -200,47 +200,51 @@ header {
 
 @media(max-width: 940px){
     .buttons{
-        display: block;
+        display: inline-block;
     }
     .btn_menu{
         margin-top: 40px;
     }
 }
 
-.section{
-    position: relative;
-    width: auto;
-    height: auto;
-    background-color: darkseagreen;
-    justify-content: center;
-}
-
-.head{
-    position: relative;
-    background-color: #5d5d7e;
-    margin-bottom: 40px;
-    margin: 20px 20px 40px 20px;
-    padding: 60px;
-    
-}
-
 .services{
     position: relative;
     display: flex;
-    padding: 20px;
-    width: auto;
-    height: auto;
-    background-color: #5d5d7e;
-    margin-top: 20%;
-    font-size: 40px;
     justify-content: center;
+    background-color: cadetblue;
+    width: 100%;
+    height: 90%;
 }
 
-.content{
+.section{
     position: relative;
-    padding: 30px;
-    display: flex;
+    width: 90%;
+    display: block;
+    height: auto;
     align-items: center;
+    padding: 3em;
+    background-color: #ffa70f;
+
+}
+
+.section .head h1{
+    font-size: 5em;
+    font-weight: bold;
+}
+
+.services{
+    align-items: center;
+
+}
+
+.services .content{
+    position: relative;
+    display: flex;
+    width: auto;
+    height: 100%;
+    align-items: center;
+    padding: 10%;
+    background-color: violet;
 }
 
 @media only screen and(max-width: 479px){
