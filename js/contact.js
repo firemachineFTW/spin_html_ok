@@ -26,11 +26,11 @@ function updateContent(){
     fetch(`${currentLanguage}.json`)
     .then(response => response.json())
     .then(data =>{
-        document.getElementById('title-contact').textContent = data.btn_contact;
-        document.getElementById('link-home').textContent = data.btn_home;
-        document.getElementById('link-about').textContent = data.btn_about;
-        document.getElementById('link-services').textContent = data.btn_services;
-        document.getElementById('link-contact').textContent = data.btn_contact;
+        document.getElementById('title-contact').textContent = data.contact;
+        document.getElementById('link-home').textContent = data.home;
+        document.getElementById('link-about').textContent = data.about;
+        document.getElementById('link-services').textContent = data.services;
+        document.getElementById('link-contact').textContent = data.contact;
     })
     .catch(error => console.error("Error loading language file", error))
 }

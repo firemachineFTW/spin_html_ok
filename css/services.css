@@ -235,14 +235,13 @@ header {
     display: flex;
     justify-content: center;
 }
+
 .services .section h1{
     font-size: 5em;
     font-weight: bold;
     position: relative;
     justify-content: end;
 }
-
-
 
 .section .container-serv .content{
     margin: 20px;
@@ -266,11 +265,8 @@ header {
 
 }
 
-@media screen and(min-width: 768px) and (max-width: 833px){
-    .container-serv {
-        display: flex;
-        flex-direction: column;
-    }
+@media only screen and(min-width: 768px) and (max-width: 833px){
+
 }
 
 @media only screen and(min-width: 834px) and (max-width: 1023px){
