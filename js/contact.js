@@ -37,44 +37,52 @@ function updateContent(){
 
 updateContent();
 
-document.getElementById('formEmail').addEventListener('submit', function(event){
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('formEmail').addEventListener('submit', function(event){
+        event.preventDefault();
 
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var number = document.getElementById('number').value;
-    var message = document.getElementById('message').value;
-    var captchaResp = grecaptcha.getResponse();
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var phone = document.getElementById('number').value;
+        var message = document.getElementById('message').value;
+        var captchaResp = grecaptcha.getResponse();
+       
 
-    if(!captchaResp){
-        alert('Por favor completa el reCAPTCHA');
-        return;
-    }
+        if(!captchaResp){
+            alert('Por favor completa el reCAPTCHA');
+            return;
+        }
 
-    const data = {
-        name : name,
-        email : email,
-        number : number,
-        message : message,
-        recaptcha : captchaResp 
-    };
+        const data = {
+            name : name,
+            email : email,
+            phone : phone,
+            message : message,
+            recaptcha : captchaResp 
+        };
 
-    fetch('php/send_email.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type' : 'application.json'
-        },
-        body: JSON.stringify(data)
-    })
-    .then(response => response.text())
-    .then(data =>{
-        console.log('Success', data);
-        alert('Correo enviado exitosamente');
-        grecaptcha.reset();
-    })
-    .catch((error)=>{
-        console.error('Error', error);
-        alert('Error al enviar el correro');
+        fetch('php/send_email.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => response.text())
+        .then(data =>{
+            console.log('Success', data);
+            alert('Correo enviado exitosamente');
+            grecaptcha.reset();
+            
+
+
+        })
+        .catch((error)=>{
+            console.error('Error', error);
+            alert('Error al enviar el correo');
+        });
+
     });
 
 });
+
