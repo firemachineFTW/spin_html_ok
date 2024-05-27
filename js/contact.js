@@ -72,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function(){
         .then(data =>{
             console.log('Success', data);
             alert('Correo enviado exitosamente');
+            document.getElementById('formEmail').reset();
             grecaptcha.reset();
             
 

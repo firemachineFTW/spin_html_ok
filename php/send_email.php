@@ -53,7 +53,7 @@ try {
     // Contenido del correo
     $mail->isHTML(true);
     $mail->Subject = 'Nuevo mensaje de contacto';
-    $mail->Body    = "Nombre: $name<br><br>Email: $email<br><br>Teléfono: $phone<br><br>Mensaje:<br>$message";
+    $mail->Body    = "Nombre:  $name<br><br>Email:  $email<br><br>Teléfono:  $phone<br><br>Mensaje:<br>$message";
 
     $mail->send();
     echo 'Correo enviado exitosamente';
