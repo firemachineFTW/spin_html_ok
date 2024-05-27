@@ -23,7 +23,7 @@ $recaptchaSecret = '6LcJSeYpAAAAAN9agagXPuWTl9DoSVnkDDGPSQ6G';
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptcha");
 $responseKeys = json_decode($response, true);
 
-if(intval($responseKeys["success"]) !== 1) {
+if (intval($responseKeys["success"]) !== 1) {
     echo 'Error en la verificación del reCAPTCHA.';
     exit;
 }
@@ -32,15 +32,15 @@ if(intval($responseKeys["success"]) !== 1) {
 $mail = new PHPMailer(true);
 
 try {
-    
-    $mail -> isSMTP();
-    $mail -> Host = 'mail.s-spin.com.mx'; 
-    $mail -> SMTPAuth = true;
-    $mail -> Username = 'contacto@s-spin.com.mx';
-    $mail -> Password = 'Sspin2024*5689'; 
-    $mail -> SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; 
-    $mail -> Port = 465; 
-    $mail -> CharSet = 'UTF-8';
+
+    $mail->isSMTP();
+    $mail->Host = 'mail.s-spin.com.mx';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'contacto@s-spin.com.mx';
+    $mail->Password = 'Sspin2024*5689';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+    $mail->Port = 465;
+    $mail->CharSet = 'UTF-8';
 
     $mail->SMTPDebug = 2;
     $mail->Debugoutput = 'html';
@@ -53,7 +53,7 @@ try {
     // Contenido del correo
     $mail->isHTML(true);
     $mail->Subject = 'Nuevo mensaje de contacto';
-    $mail->Body    = "Nombre:  $name<br><br>Email:  $email<br><br>Teléfono:  $phone<br><br>Mensaje:<br>$message";
+    $mail->Body = "Nombre:  $name<br><br>Email:  $email<br><br>Teléfono:  $phone<br><br>Mensaje:<br>$message";
 
     $mail->send();
     echo 'Correo enviado exitosamente';

@@ -79,17 +79,17 @@ header {
     display: none;
 }
 
-.btn-list{
+.btn-list {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.btn-list li{
+.btn-list li {
     display: inline;
 }
 
-.btn-list button{
+.btn-list button {
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -100,7 +100,7 @@ header {
     font-weight: bold;
     background-color: #000;
     color: #eee;
-    transition: .5s; 
+    transition: .5s;
 }
 
 .dropdown_menu {
@@ -225,9 +225,9 @@ header {
 }
 
 @media screen and (max-width: 640px) {
-    .about-content{
+    .about-content {
         display: block;
-        
+
     }
-    
+
 }

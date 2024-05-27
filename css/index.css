@@ -87,7 +87,7 @@ header {
     display: inline;
 }
 
-.btn-list button{
+.btn-list button {
     width: 2em;
     height: 2em;
     border-radius: 50%;
@@ -98,7 +98,7 @@ header {
     font-weight: bold;
     background-color: #000;
     color: #eee;
-    transition: .5s; 
+    transition: .5s;
 }
 
 .dropdown_menu {
@@ -195,7 +195,7 @@ header {
     font-size: 30px;
 }
 
-.slider .list .item .content p:nth-child(3){
+.slider .list .item .content p:nth-child(3) {
     font-size: 30px;
 }
 
@@ -273,12 +273,12 @@ header {
         letter-spacing: 10px;
     }
 
-    .slider .list .item .content p:nth-child(1){
+    .slider .list .item .content p:nth-child(1) {
         font-size: 18px;
         text-align: center;
     }
 
-    .slider .list .item .content p:nth-child(3){
+    .slider .list .item .content p:nth-child(3) {
         font-size: 18px;
         text-align: center;
     }
