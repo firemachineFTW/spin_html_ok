@@ -27,10 +27,14 @@ function updateContent() {
         .then(response => response.json())
         .then(data => {
             document.getElementById('title-contact').textContent = data.contact;
+
             document.getElementById('link-home').textContent = data.home;
             document.getElementById('link-about').textContent = data.about;
             document.getElementById('link-services').textContent = data.services;
             document.getElementById('link-contact').textContent = data.contact;
+
+            document.getElementById('form-contact-h1').textContent = data.contact_uppr;
+
         })
         .catch(error => console.error("Error loading language file", error))
 }

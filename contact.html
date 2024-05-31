@@ -85,23 +85,23 @@
             </div>
             <div class="form-container">
                 <form action="php/send_email.php" id="formEmail" method="POST">
-                    <h1>CONTACT US</h1>
+                    <h1 id="form-contact-h1">CONTACT US</h1>
 
-                    <label for="nombre">Name</label>
+                    <label id="name-lbl" for="nombre">Name</label>
                     <input type="text" name="name" id="name" placeholder="Name" required>
     
-                    <label for="email">E-mail</label>
+                    <label id="email-lbl" for="email">E-mail</label>
                     <input type="email" name="email" id="email" placeholder="email@example.com" required>
     
-                    <label for="number">Phone</label>
+                    <label id="phone-lbl" for="number">Phone</label>
                     <input type="tel" name="number" id="number" placeholder="Number" required>
     
-                    <label for="message">Message</label>
+                    <label id="msg-lbl" for="message">Message</label>
                     <textarea name="message" id="message" placeholder="Message" required></textarea>
 
                     <div class="g-recaptcha" data-sitekey="6LcJSeYpAAAAAMdhXR6a2x47MR92QUK8LikbIM7J"></div>
     
-                    <button type="submit">Send</button>
+                    <button id="btn-submit" type="submit">Send</button>
                 </form>
             </div>
         </div>
