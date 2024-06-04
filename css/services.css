@@ -242,8 +242,8 @@ header {
 }
 
 .services .section h1{
-    font-size: 3em;
-    font-weight: bold;
+    font-size: 2em;
+    font-weight: lighter;
     position: relative;
 }
 
@@ -257,7 +257,7 @@ header {
 }
 
 .container-serv .content .item{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: lighter;
 }
 
@@ -276,16 +276,15 @@ header {
 
 @media screen and (max-width: 1023px){
     .buttons{
-        display: inline-block;
-        top: 7em;
+        display: block;
     }
     .btn_menu{
-        margin-top: 9px;
+        margin-top: 50px;
     }
      .container-serv{
         display: block;
         height: auto;
-        scroll-margin-top: 10em;
+        scroll-margin-top: 20em;
     }
     
 }
