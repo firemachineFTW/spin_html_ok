@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     background-color: #d1d1d1;
-    background-image: url(../img/about_background.webp);
+    background-image: url(../img/img-about.webp);
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -167,7 +167,7 @@ header {
 }
 
 .about-content .mission {
-    background: rgba(36, 108, 209, 0.3);
+    background: rgba(248, 94, 17, 0.3);
     backdrop-filter: blur(20px);
     margin: 20px;
     font-size: .7em;
@@ -179,7 +179,7 @@ header {
 }
 
 .about-content .vission {
-    background: rgba(36, 108, 209, 0.3);
+    background: rgba(248, 94, 17, 0.3);
     backdrop-filter: blur(20px);
     margin: 20px;
     font-size: .7em;
@@ -200,7 +200,7 @@ header {
     display: flex;
     font-size: 1.5em;
     text-align: justify;
-    background: rgba(36, 108, 209, 0.5);
+    background: rgba(248, 94, 17, 0.3);
     backdrop-filter: blur(30px);
     box-shadow: rgb(86, 86, 86) 10px 10px 90px 10px;
     padding: 25px;

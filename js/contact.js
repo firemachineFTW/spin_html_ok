@@ -34,14 +34,19 @@ function updateContent() {
             document.getElementById('link-contact').textContent = data.contact;
 
             document.getElementById('form-contact-h1').textContent = data.contact_uppr;
-            document.getElementById('name-lbl').textContent = data.name;
+
+            document.getElementById('name-lbl').textContent = data.name_lbl;
             document.getElementById('name').textContent = data.name;
-            document.getElementById('email-lbl').textContent = data.email;
+
+            document.getElementById('email-lbl').textContent = data.email_lbl;
             document.getElementById('email').textContent = data.email;
+
             document.getElementById('phone-lbl').textContent = data.phone_lbl;
-            document.getElementById('number').textContent = data.phone;
+            document.getElementById('phone').textContent = data.phone;
+
             document.getElementById('msg-lbl').textContent = data.msg_lbl;
             document.getElementById('message').textContent = data.message;
+
             document.getElementById('btn-submit').textContent = data.btn_sbmt;
 
         })
