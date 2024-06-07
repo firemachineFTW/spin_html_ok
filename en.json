@@ -3,24 +3,28 @@
     "about": "About",
     "services": "Services",
     "contact": "Contact Us",
+
     "contact_uppr": "CONTACT US",
+
     "slogan": "Do you have problems?... We have the solutions!",
+
     "about_us": "About Us...",
     "about_us_p": "Soluciones Spin is a company with more than 15 years of experience, specialized in providing integral solutions in the following areas: Civil, Electrical and HVAC.",
+
     "safety_i": "Industrial Safety",
     "safety_p": "For Soluciones Spin S.A. de C.V. security is fundamental for the development of our business activity. That is why our staff is in constant training.",
+
     "mission_h1": "Mission",
     "vision_h1": "Vision",
     "mission": "To provide effective and outstanding solutions, meeting the needs of both our clients and ourselves.",
     "vision": "To position Soluciones SPIN as a leading company, offering the best commercial offer in the market.",
+
     "about_text": "In Soluciones SPIN we always seek to be at the forefront and have the best human and mechanical infrastructure necessary to perform a professional job that guarantees results according to the customer's needs.",
+
     "name_lbl":"Name",
-    "name":"Type your name",
     "email_lbl":"E-mail",
-    "email":"email@example.com",
     "phone_lbl":"Phone",
-    "phone":"Number",
     "msg_lbl":"Message",
-    "message":"Type a message",
+
     "btn_sbmt":"Submit"
 }

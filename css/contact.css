@@ -111,7 +111,7 @@ header {
     height: 0;
     width: 300px;
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(229, 150, 38, 0.405);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -226,7 +226,7 @@ header {
 }
 
 .form-container label {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .form-container button {

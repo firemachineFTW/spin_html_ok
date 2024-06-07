@@ -37,19 +37,17 @@ function updateContent() {
             document.getElementById('link-services').textContent = data.services;
             document.getElementById('link-contact').textContent = data.contact;
 
+            document.getElementById('link-home-d').textContent = data.home;
+            document.getElementById('link-about-d').textContent = data.about;
+            document.getElementById('link-services-d').textContent = data.services;
+            document.getElementById('link-contact-d').textContent = data.contact;
+
             document.getElementById('form-contact-h1').textContent = data.contact_uppr;
 
             document.getElementById('name-lbl').textContent = data.name_lbl;
-            document.getElementById('name').textContent = data.name;
-
             document.getElementById('email-lbl').textContent = data.email_lbl;
-            document.getElementById('email').textContent = data.email;
-
             document.getElementById('phone-lbl').textContent = data.phone_lbl;
-            document.getElementById('phone').textContent = data.phone;
-
             document.getElementById('msg-lbl').textContent = data.msg_lbl;
-            document.getElementById('message').textContent = data.message;
 
             document.getElementById('btn-submit').textContent = data.btn_sbmt;
 

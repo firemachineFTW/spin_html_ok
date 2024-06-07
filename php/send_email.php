@@ -23,6 +23,7 @@ $recaptchaSecret = '6LcJSeYpAAAAAN9agagXPuWTl9DoSVnkDDGPSQ6G';
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptcha");
 $responseKeys = json_decode($response, true);
 
+
 if (intval($responseKeys["success"]) !== 1) {
     echo 'Error en la verificación del reCAPTCHA.';
     exit;

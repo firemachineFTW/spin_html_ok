@@ -42,6 +42,11 @@ function updateContent(){
         document.getElementById('link-about').textContent = data.about;
         document.getElementById('link-services').textContent = data.services;
         document.getElementById('link-contact').textContent = data.contact;
+
+        document.getElementById('link-home-d').textContent = data.home;
+        document.getElementById('link-about-d').textContent = data.about;
+        document.getElementById('link-services-d').textContent = data.services;
+        document.getElementById('link-contact-d').textContent = data.contact;
     })
     .catch(error => console.error("Error loading language file", error))
 

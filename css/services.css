@@ -108,7 +108,7 @@ header {
     height: 0;
     width: 300px;
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(229, 150, 38, 0.405);
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -160,7 +160,7 @@ header {
     }
 }
 
-.container{
+.container-btn{
     position: relative;
     display: flex;
     justify-content: center;
@@ -170,7 +170,7 @@ header {
 
 }
 
-.content{
+.content-btn{
     position: relative;
     display: flex;
     justify-content: center;
@@ -213,22 +213,23 @@ header {
 .services{
     position: relative;
     justify-content: center;
-    background-color: cadetblue;
     top: 20px;
+    padding: 10px;
     width: 100%;
     height: auto;
     align-items: center;
     display: flex;
+    
 }
 
 .section{
     position: relative;
     width: 85%;
-    height: auto;
-    top: 5%;
-    padding: 3em;
+    height: 90%;
+    padding: 1em;
     background-color: #ffa70f;
-    scroll-margin-top: 4em;
+    border-radius: 30px;
+    scroll-margin-top: 6em;
 }
 
 .container-serv{
@@ -247,10 +248,15 @@ header {
 
 .section .container-serv .content{
     position: relative;
+    display: flex;
     background-color: violet;
+    border-radius: 20px;
     padding: 10px;
-    width: auto;
+    width: 100%;
     height: auto;
+    justify-content: center;
+    margin-top: 20px;
+    bottom: 20px;
 
 }
 
