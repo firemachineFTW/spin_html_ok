@@ -165,10 +165,8 @@ header {
     display: flex;
     justify-content: center;
     padding: 20px;
-    top: 20px;
     width: auto;
     height: 100vh;
-    z-index: 10;
 
 }
 
@@ -176,10 +174,9 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 20px;
     height: 100%;
     bottom: 10px;
-    overflow: hidden;
 }
 
 .buttons{
@@ -197,10 +194,11 @@ header {
     height: 170px;
     border-radius: 20px;
     border: none;
-    box-shadow: rgb(244, 190, 43) 10px 10px 90px 10px;
-    background-image: linear-gradient(to top, #f6da23 100%, transparent);
+    box-shadow: 0px 10px 24px -7px #1b1e1f;
+    background: linear-gradient(to bottom, #ffa70f 5%, #f5c813d0 100%);
     backdrop-filter: blur(30px);
 }
+
 
 .btn_menu:hover{
     transform: scale(1.2);
@@ -230,12 +228,12 @@ header {
     top: 5%;
     padding: 3em;
     background-color: #ffa70f;
-    scroll-margin-top: 9em;
+    scroll-margin-top: 4em;
 }
 
 .container-serv{
     position: relative;
-    display: flex;
+    display: block;
     justify-content: space-between;
     top: 2em;
     padding: 1em;
@@ -261,27 +259,7 @@ header {
     font-weight: lighter;
 }
 
-
-@media only screen and(max-width: 479px){
-
-}
-
-@media only screen and(min-width: 480px) and (max-width: 767px){
-
-}
-
-@media only screen and(min-width: 768px) and (max-width: 833px){
-
-}
-
-@media screen and (max-width: 1023px){
-    .buttons{
-        display: block;
-        top: 3em;
-    }
-    .btn_menu{
-        margin-top: 50px;
-    }
+@media screen and (max-width: 1120px){
      .container-serv{
         display: block;
         height: auto;
@@ -290,10 +268,20 @@ header {
     
 }
 
-@media only screen and(min-width: 1024px) and (max-width: 1023px){
-
+@media screen and (max-width: 992px) {
+    .buttons{
+        display: block;
+        top: 4em;
+    }
+    .btn_menu{
+        margin-top: 50px;
+    }
 }
 
-@media only screen and(min-width: 1024px){
-
+@media screen and (max-height: 800px) {
+    .buttons{
+        display: flex;
+        top: 0em;
+    }
+    
 }

@@ -26,10 +26,14 @@ function changeLanguage(language){
     document.getElementById('btn-' + language).classList.add('active');
 
     currentLanguage = language;
+    localStorage.setItem('language', language);
     updateContent();
 }
 
 function updateContent(){
+    let savedLanguage = localStorage.getItem('language');
+    currentLanguage = savedLanguage ? savedLanguage : 'en';
+
     fetch(`${currentLanguage}.json`)
     .then(response => response.json())
     .then(data =>{
@@ -40,6 +44,18 @@ function updateContent(){
         document.getElementById('link-contact').textContent = data.contact;
     })
     .catch(error => console.error("Error loading language file", error))
+
+    document.getElementById('btn-' + currentLanguage).classList.add('active');
 }
 
-updateContent();
+document.addEventListener('DOMContentLoaded', ()=>{
+    let savedLanguage = localStorage.getItem('language');
+    if(savedLanguage){
+        currentLanguage = savedLanguage;
+    }else{
+        currentLanguage = 'en';
+    }
+    document.getElementById('btn-' + currentLanguage).classList.add('active');
+    updateContent();
+});
+

@@ -19,10 +19,14 @@ function changeLanguage(language) {
     document.getElementById('btn-' + language).classList.add('active');
 
     currentLanguage = language;
+    localStorage.setItem('language', language);
     updateContent();
 }
 
 function updateContent() {
+    let savedLanguage = localStorage.getItem('language');
+    currentLanguage = savedLanguage ? savedLanguage : 'en';
+
     fetch(`${currentLanguage}.json`)
         .then(response => response.json())
         .then(data => {
@@ -50,10 +54,22 @@ function updateContent() {
             document.getElementById('btn-submit').textContent = data.btn_sbmt;
 
         })
-        .catch(error => console.error("Error loading language file", error))
+        .catch(error => console.error("Error loading language file", error));
+
+        document.getElementById('btn-' + currentLanguage).classList.add('active');
 }
 
-updateContent();
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    let savedLanguage = localStorage.getItem('language');
+    if(savedLanguage){
+        currentLanguage = savedLanguage;
+    }else{
+        currentLanguage = 'en';
+    }
+    document.getElementById('btn-' + currentLanguage).classList.add('active');
+    updateContent();
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('formEmail').addEventListener('submit', function (event) {
@@ -61,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var name = document.getElementById('name').value;
         var email = document.getElementById('email').value;
-        var phone = document.getElementById('number').value;
+        var phone = document.getElementById('phone').value;
         var message = document.getElementById('message').value;
         var captchaResp = grecaptcha.getResponse();
 
@@ -92,16 +108,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('Correo enviado exitosamente');
                 document.getElementById('formEmail').reset();
                 grecaptcha.reset();
-
-
-
             })
             .catch((error) => {
                 console.error('Error', error);
                 alert('Error al enviar el correo');
             });
+        });
 
     });
-
-});
-
