@@ -21,6 +21,29 @@
 
     "about_text": "In Soluciones SPIN we always seek to be at the forefront and have the best human and mechanical infrastructure necessary to perform a professional job that guarantees results according to the customer's needs.",
 
+    "build_work":"Building Work",
+    "hvac":"HVAC",
+    "e_install":"Electric Installations",
+
+    "projects":"Projects",
+    "new_build":"New Building",
+    "renovation":"Refurbishments",
+    "confort":"Comfort",
+    "cooling":"Colling",
+    "p_control":"Pollution Control",
+    "telecom":"Telecommunications",
+    "control":"Control",
+    "s_facilities":"Special Facilities",
+
+    "archtc":"Architectural",
+    "struct":"Structural",
+    "hydr":"Hydraulic",
+    "roadw":"Roadways",
+    "masonr":"Masonry structures",
+    "concrt":"Concrete structures",
+    "metals":"Metal structues",
+    "":"",
+
     "name_lbl":"Name",
     "email_lbl":"E-mail",
     "phone_lbl":"Phone",

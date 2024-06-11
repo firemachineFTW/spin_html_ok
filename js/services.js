@@ -1,3 +1,4 @@
+
 const toggleBtn = document.querySelector('.toggle-btn')
         const toggleBtnIcon = document.querySelector('.toggle-btn i')
         const dropdownMenu = document.querySelector('.dropdown_menu')
@@ -63,4 +64,24 @@ document.addEventListener('DOMContentLoaded', ()=>{
     document.getElementById('btn-' + currentLanguage).classList.add('active');
     updateContent();
 });
+
+
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+    let reveals = document.querySelectorAll('.reveal');
+
+    for(let i = 0; i < reveals.length; i++){
+        windowHeight = window.innerHeight;
+        let revealTop = reveals[i].getBoundingClientRect().top;
+        let revealPoint = 250;
+
+        if(revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
 

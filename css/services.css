@@ -167,7 +167,10 @@ header {
     padding: 20px;
     width: auto;
     height: 100vh;
-
+    background-image: url('../img/IMG-20240412-WA0006.webp');
+    background-size: cover;
+    background-position: center;
+    
 }
 
 .content-btn{
@@ -213,13 +216,24 @@ header {
 .services{
     position: relative;
     justify-content: center;
-    top: 20px;
+    top: 0px;
     padding: 10px;
     width: 100%;
-    height: auto;
+    min-height: 130vh;
     align-items: center;
     display: flex;
-    
+    background-color: #90CAF9;
+}
+
+.reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .section{
@@ -229,7 +243,7 @@ header {
     padding: 1em;
     background-color: #ffa70f;
     border-radius: 30px;
-    scroll-margin-top: 6em;
+    scroll-margin-top: 20em;
 }
 
 .container-serv{
@@ -241,9 +255,9 @@ header {
 }
 
 .services .section h1{
-    font-size: 2em;
+    font-size: 2.5em;
     font-weight: lighter;
-    position: relative;
+    text-align: center;
 }
 
 .section .container-serv .content{
@@ -276,7 +290,7 @@ header {
      .container-serv{
         display: block;
         height: auto;
-        scroll-margin-top: 20em;
+        scroll-margin-top: 36em;
     }
     
 }
@@ -284,7 +298,7 @@ header {
 @media screen and (max-width: 992px) {
     .buttons{
         display: block;
-        top: 4em;
+        top: 5em;
     }
     .btn_menu{
         margin-top: 50px;
@@ -313,7 +327,7 @@ header {
 @media screen and (max-height: 800px) {
     .buttons{
         display: flex;
-        top: 0em;
+
     }
     
 }
