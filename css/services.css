@@ -225,7 +225,7 @@ header {
 .section{
     position: relative;
     width: 85%;
-    height: 90%;
+    height: 100%;
     padding: 1em;
     background-color: #ffa70f;
     border-radius: 30px;
@@ -254,15 +254,22 @@ header {
     padding: 10px;
     width: 100%;
     height: auto;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
     bottom: 20px;
 
 }
 
 .container-serv .content .item{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: lighter;
+    display: flex;
+    align-items: center;
+    gap: 250px;
+}
+
+.container-serv .content .item .items li{
+    list-style: disc;
 }
 
 @media screen and (max-width: 1120px){
@@ -281,6 +288,25 @@ header {
     }
     .btn_menu{
         margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-serv .content .item{
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-serv .content .item{
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container-serv .content .item{
+        display: block;
+        gap: 10px;
     }
 }
 
