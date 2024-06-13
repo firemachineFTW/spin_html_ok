@@ -5,6 +5,7 @@
     "contact": "Contact Us",
 
     "contact_uppr": "CONTACT US",
+    "corpor":"Corporate",
 
     "slogan": "Do you have problems?... We have the solutions!",
 
@@ -41,7 +42,24 @@
     "roadw":"Roadways",
     "masonr":"Masonry structures",
     "concrt":"Concrete structures",
-    "metals":"Metal structues",
+    "metals":"Metal structures",
+    "concret":"Concrete slabs",
+    "finish":"Finishings",
+    "drywall":"Drywall",
+    "cancel":"Aluminum works",
+    "floors":"Floors",
+    "paint":"Painting works",
+    "areaa":"Area adaptations",
+
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
+    "":"",
     "":"",
 
     "name_lbl":"Name",

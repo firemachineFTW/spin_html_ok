@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: #d1d1d1;
+    background-color: #FFD740;
     background-position: center;
     color: #fff;
 }
@@ -45,9 +45,9 @@ header {
     left: 0;
     width: 100%;
     padding: 0 2rem;
-    background-color: #d1d1d1;; 
     z-index: 1000;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .navbar {
@@ -187,7 +187,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 10px;
-    top: 10px;
+    top: 0px;
     gap: 100px;
     animation: start-text 3s ease-in-out forwards;
 }
@@ -198,18 +198,17 @@ header {
     border-radius: 20px;
     border: none;
     box-shadow: 0px 10px 24px -7px #1b1e1f;
-    background: linear-gradient(to bottom, #ffa70f 5%, #f5c813d0 100%);
     backdrop-filter: blur(30px);
 }
 
 
 .btn_menu:hover{
-    transform: scale(1.2);
+    background-color: #2196F3;
     transition: .5s;
 }
 
 .btn_menu:not(:hover){
-    transform: scale(1);
+
     transition: .5s;
 }
 
@@ -219,31 +218,31 @@ header {
     top: 0px;
     padding: 10px;
     width: 100%;
-    min-height: 130vh;
+    min-height: 100vh;
     align-items: center;
     display: flex;
-    background-color: #90CAF9;
 }
 
 .reveal{
-    transform: translateY(150px);
+    transform: translateY(60px);
     opacity: 0;
     transition: all 1.5s ease-in-out;
 }
 
 .reveal.active{
-    transform: translateY(0px);
+    transform: translateY(10px);
     opacity: 1;
 }
 
 .section{
     position: relative;
-    width: 85%;
-    height: 100%;
+    min-width: 80%;
+    top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 1em;
-    background-color: #ffa70f;
+    background-color: #fff;
     border-radius: 30px;
-    scroll-margin-top: 20em;
+    scroll-margin-top: 10em;
 }
 
 .container-serv{
@@ -256,6 +255,7 @@ header {
 
 .services .section h1{
     font-size: 2.5em;
+    color: #000;
     font-weight: lighter;
     text-align: center;
 }
@@ -263,10 +263,12 @@ header {
 .section .container-serv .content{
     position: relative;
     display: flex;
-    background-color: violet;
+    background-color: #2196F3;
     border-radius: 20px;
-    padding: 10px;
-    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5px;
+    max-width: 70%;
+    margin: auto;
     height: auto;
     justify-content: space-around;
     margin-top: 20px;
@@ -279,7 +281,8 @@ header {
     font-weight: lighter;
     display: flex;
     align-items: center;
-    gap: 250px;
+    justify-content: space-around;
+
 }
 
 .container-serv .content .item .items li{
@@ -290,7 +293,7 @@ header {
      .container-serv{
         display: block;
         height: auto;
-        scroll-margin-top: 36em;
+        
     }
     
 }
@@ -298,7 +301,7 @@ header {
 @media screen and (max-width: 992px) {
     .buttons{
         display: block;
-        top: 5em;
+        top: 3em;
     }
     .btn_menu{
         margin-top: 50px;
@@ -306,21 +309,16 @@ header {
 }
 
 @media screen and (max-width: 900px) {
-    .container-serv .content .item{
-        gap: 100px;
-    }
+    
 }
 
 @media screen and (max-width: 800px) {
-    .container-serv .content .item{
-        gap: 50px;
-    }
+    
 }
 
 @media screen and (max-width: 650px) {
     .container-serv .content .item{
         display: block;
-        gap: 10px;
     }
 }
 
