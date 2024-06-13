@@ -111,7 +111,7 @@ header {
     height: 0;
     width: 300px;
     font-weight: bold;
-    background: rgba(229, 150, 38, 0.405);
+    background: #90CAF9;
     backdrop-filter: blur(5px);
     border-radius: 10px;
     overflow: hidden;
@@ -161,7 +161,7 @@ header {
 
 .about-content {
     display: flex;
-    margin-top: 20%;
+    margin-top: 10%;
     font-size: 30px;
     gap: 50px;
 }

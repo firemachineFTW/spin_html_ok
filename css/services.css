@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-color: #FFD740;
+    background-color: #d1d1d1;
     background-position: center;
     color: #fff;
 }
@@ -108,7 +108,7 @@ header {
     height: 0;
     width: 300px;
     font-weight: bold;
-    background: rgba(229, 150, 38, 0.405);
+    background: #90CAF9;
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
@@ -177,7 +177,6 @@ header {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     height: 100%;
     bottom: 10px;
 }
@@ -267,7 +266,7 @@ header {
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 5px;
-    max-width: 70%;
+    max-width: 80%;
     margin: auto;
     height: auto;
     justify-content: space-around;
@@ -322,10 +321,17 @@ header {
     }
 }
 
-@media screen and (max-height: 800px) {
+@media screen and (max-height: 700px) {
+    .btn_menu{
+        width: 130px;
+        height: 130px;
+    }
+    
+}
+
+@media screen and (max-height: 600px) {
     .buttons{
         display: flex;
-
     }
     
 }

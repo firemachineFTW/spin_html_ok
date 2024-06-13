@@ -46,17 +46,17 @@
             <ul class="buttons">
                 <li>
                     <a href="#" onclick="scrollToSection('section1')">
-                        <button class="btn_menu">Obra Civil</button>
+                        <button class="btn_menu" id="build-work">Obra Civil</button>
                     </a>
                 </li>
                 <li>
                     <a href="#" onclick="scrollToSection('section2')">
-                        <button class="btn_menu">HVAC</button>
+                        <button class="btn_menu" id="hvac">HVAC</button>
                     </a>
                 </li>
                 <li>
                     <a href="#" onclick="scrollToSection('section3')">
-                        <button class="btn_menu">Instalaciones Electricas</button>
+                        <button class="btn_menu" id="e-install">Instalaciones Electricas</button>
                     </a>
                 </li>
             </ul>
@@ -64,40 +64,40 @@
     </div>
     <div class="services">
         <div id="section1" class="section reveal">
-            <h1>Obra Civil</h1>
+            <h1 id="build-works">Obra Civil</h1>
             <div class="container-serv">
                 <div class="content">
                     <div class="item">
-                        <h2>Proyectos</h2>
+                        <h2 id="projects">Proyectos</h2>
                             <ul class="items">
-                                <li>Arquitectonicos</li>
-                                <li>Estructurales</li>
-                                <li>Hidraulicos</li>
-                                <li>Vias Terestres</li>
+                                <li id="archtc">Arquitectonicos</li>
+                                <li id="struct">Estructurales</li>
+                                <li id="hydra">Hidraulicos</li>
+                                <li id="roadw">Vias Terestres</li>
                             </ul>
                     </div> 
                 </div>
                 <div class="content">
                     <div class="item">
-                        <h2>Obra Nueva</h2>
+                        <h2 id="new-build">Obra Nueva</h2>
                         <ul class="items">
-                            <li>Estructuras de mamposteria.</li>
-                            <li>Estructuras de concreto.</li>
-                            <li>Estructuras metalicas.</li>
-                            <li>Firmes de concreto.</li>
+                            <li id="masonr">Estructuras de mamposteria.</li>
+                            <li id="concrt">Estructuras de concreto.</li>
+                            <li id="metals">Estructuras metalicas.</li>
+                            <li id="concret">Firmes de concreto.</li>
                         </ul>
                     </div> 
                 </div>
                 <div class="content">
                     <div class="item">
-                        <h2>Remodelaciones</h2>
+                        <h2 id="renovation">Remodelaciones</h2>
                         <ul class="items">
-                            <li>Acabados.</li>
-                            <li>Tablaroca.</li>
-                            <li>Canceleria.</li>
-                            <li>Pisos.</li>
-                            <li>Pintura.</li>
-                            <li>Adecuaciones de areas.</li>
+                            <li id="finish">Acabados</li>
+                            <li id="drywall">Tablaroca</li>
+                            <li id="cancel">Canceleria</li>
+                            <li id="floors">Pisos.</li>
+                            <li id="paint">Pintura</li>
+                            <li id="areaa">Adecuaciones de áreas</li>
                         </ul>
                     </div> 
                 </div>
@@ -107,38 +107,38 @@
     <div class="services">
         <div id="section2" class="section reveal">
             <div class="head">
-                <h1>HVAC</h1>
+                <h1 id="hvacs">HVAC</h1>
             </div> 
             <div class="container-serv">
                 <div class="content">
                     <div class="item">
-                            <h2>Confort</h2>
+                            <h2 id="confort">Confort</h2>
                             <ul class="items">
-                                <li>Sistema de control de humedad.</li>
-                                <li>Sistema de calidad de aire.</li>
-                                <li>Sistema de enfriamiento.</li>
-                                <li>Sistema de calefaccion.</li>
+                                <li id="humidt">Sistema de control de humedad</li>
+                                <li id="aircon">Sistema de calidad de aire</li>
+                                <li id="coolin">Sistema de enfriamiento</li>
+                                <li id="heats">Sistema de calefaccion</li>
                             </ul>
                     </div> 
                 </div>
                 <div class="content">
                     <div class="item">
-                        <h2>Refrigeracion</h2>
+                        <h2 id="cooling">Refrigeracion</h2>
                         <ul class="items">
-                            <li>Camaras de conservacion.</li>
-                            <li>Camaras de congelacion.</li>
-                            <li>Tuneles de enfriamiento.</li>
-                            <li>Cuartos de reposo.</li>
+                            <li id="consrv">Camaras de conservacion</li>
+                            <li id="freezr">Camaras de congelacion</li>
+                            <li id="tunels">Tuneles de enfriamiento</li>
+                            <li id="restr">Cuartos de reposo</li>
                         </ul>
                     </div> 
                 </div>
                 <div class="content">
                     <div class="item">
-                        <h2>Control de contaminacion.</h2>
+                        <h2 id="p-control">Control de contaminacion</h2>
                         <ul class="items">
-                            <li>Sistema control de polvo.</li>
-                            <li>Sistema control de olores.</li>
-                            <li>Sistema control de gases.</li>
+                            <li id="dustc">Sistema control de polvo</li>
+                            <li id="odorc">Sistema control de olores</li>
+                            <li id="gasctrl">Sistema control de gases</li>
                         </ul>
                     </div> 
                 </div>
@@ -148,17 +148,17 @@
     <div class="services">
         <div id="section3" class="section reveal">
             <div class="head">
-                <h1>Instalaciones Electricas, Electronicas y Especiales.</h1>
+                <h1 id="s-facilities">Instalaciones Electricas, Electronicas y Especiales</h1>
             </div> 
             <div class="container-serv">
                 <div class="content">
                     <div class="item">
-                            <h2>Telecomunicaciones</h2>
+                            <h2 id="telecom">Telecomunicaciones</h2>
                             <ul class="items">
-                                <li>Conmutadores.</li>
-                                <li>Mutilinea.</li>
-                                <li>Intercomunicacion.</li>
-                                <li>Switches y Modems.</li>
+                                <li id="switc">Conmutadores</li>
+                                <li id="multil">Mutilinea</li>
+                                <li id="interc">Intercomunicacion</li>
+                                <li id="swtchs">Switches y Modems</li>
                             </ul>
                     </div> 
                 </div>
@@ -166,20 +166,20 @@
                     <div class="item">
                         <h2>Control </h2>
                         <ul class="items">
-                            <li>Control Industrial.</li>
-                            <li>Ahorro de energia.</li>
+                            <li id="indstr">Control Industrial.</li>
+                            <li id="nrgsv">Ahorro de energia.</li>
                         </ul>
                     </div> 
                 </div>
                 <div class="content">
                     <div class="item">
-                        <h2>Instalaciones Especiales</h2>
+                        <h2 id="s-facilities">Instalaciones Especiales</h2>
                         <ul class="items">
-                            <li>Deteccion de incendios.</li>
-                            <li>Control de iluminacion.</li>
-                            <li>Sonido ambiental.</li>
-                            <li>Control de bombas.</li>
-                            <li>Sistema de alarmas.</li>
+                            <li id="firdt">Deteccion de incendios</li>
+                            <li id="illmn">Control de iluminacion</li>
+                            <li id="ambnt">Sonido ambiental</li>
+                            <li id="pumpc">Control de bombas</li>
+                            <li id="alert">Sistema de alarmas</li>
                         </ul>
                     </div> 
                 </div>

@@ -48,6 +48,66 @@ function updateContent(){
         document.getElementById('link-about-d').textContent = data.about;
         document.getElementById('link-services-d').textContent = data.services;
         document.getElementById('link-contact-d').textContent = data.contact;
+
+        document.getElementById('build-work').textContent = data.build_work;
+        document.getElementById('hvac').textContent = data.hvac;
+        document.getElementById('e-install').textContent = data.e_install;
+
+        document.getElementById('build-works').textContent = data.build_work;
+        document.getElementById('archtc').textContent = data.archtc;
+        document.getElementById('struct').textContent = data.struct;
+        document.getElementById('hydra').textContent = data.hydr;
+        document.getElementById('roadw').textContent = data.roadw;
+
+        document.getElementById('new-build').textContent = data.new_build;
+        document.getElementById('masonr').textContent = data.masonr;
+        document.getElementById('concrt').textContent = data.concrt;
+        document.getElementById('metals').textContent = data.metals;
+        document.getElementById('concret').textContent = data.concret;
+
+        document.getElementById('renovation').textContent = data.renovation;
+        document.getElementById('finish').textContent = data.finish;
+        document.getElementById('drywall').textContent = data.drywall;
+        document.getElementById('cancel').textContent = data.cancel;
+        document.getElementById('floors').textContent = data.floors;
+        document.getElementById('paint').textContent = data.paint;
+        document.getElementById('areaa').textContent = data.areaa;
+
+        document.getElementById('hvacs').textContent = data.hvac;
+        document.getElementById('confort').textContent = data.confort;
+        document.getElementById('humidt').textContent = data.humidt;
+        document.getElementById('aircon').textContent = data.aircon;
+        document.getElementById('coolin').textContent = data.coolin;
+        document.getElementById('heats').textContent = data.heats;
+
+        document.getElementById('cooling').textContent = data.cooling;
+        document.getElementById('consrv').textContent = data.consrv;
+        document.getElementById('freezr').textContent = data.freezr;
+        document.getElementById('tunels').textContent = data.tunels;
+        document.getElementById('restr').textContent = data.restr;
+
+        document.getElementById('p-control').textContent = data.p_control;
+        document.getElementById('dustc').textContent = data.dustc;
+        document.getElementById('odorc').textContent = data.odorc;
+        document.getElementById('gasctrl').textContent = data.gasctrl;
+
+        document.getElementById('s-facilities').textContent = data.s_facilities;
+        document.getElementById('telecom').textContent = data.telecom;
+        document.getElementById('switc').textContent = data.switc;
+        document.getElementById('multil').textContent = data.multl;
+        document.getElementById('interc').textContent = data.interc;
+        document.getElementById('swtchs').textContent = data.swtchs
+
+        document.getElementById('indstr').textContent = data.indstr;
+        document.getElementById('nrgsv').textContent = data.nrgsv;
+
+        document.getElementById('s-facilities').textContent = data.s_facilities;
+        document.getElementById('firdt').textContent = data.firdt;
+        document.getElementById('illmn').textContent = data.illmn;
+        document.getElementById('ambnt').textContent = data.ambnt;
+        document.getElementById('pumpc').textContent = data.pumpc;
+        document.getElementById('alert').textContent = data.alert;
+
     })
     .catch(error => console.error("Error loading language file", error))
 

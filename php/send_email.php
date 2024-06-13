@@ -51,9 +51,6 @@ try {
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
 
-    $mail->SMTPDebug = 2;
-    $mail->Debugoutput = 'html';
-
     // Remitente y destinatario
     $mail->setFrom($fromEmail, 'Contacto');
     $mail->addAddress($toEmail);

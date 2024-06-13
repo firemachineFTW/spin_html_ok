@@ -102,8 +102,11 @@ document.addEventListener('DOMContentLoaded', function () {
         })
             .then(response => response.text())
             .then(data => {
-                console.log(data);
-                alert('Correo enviado exitosamente');
+                Swal.fire({
+                    title: "Correo enviado",
+                    text: "El correo se ha enviado directamente",
+                    icon: "success"
+                  });
                 document.getElementById('formEmail').reset();
                 grecaptcha.reset();
             })
