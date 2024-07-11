@@ -43,6 +43,7 @@ function updateContent() {
             document.getElementById('link-contact-d').textContent = data.contact;
 
             document.getElementById('form-contact-h1').textContent = data.contact_uppr;
+            document.getElementById('corpor').textContent = data.corpor;
 
             document.getElementById('name-lbl').textContent = data.name_lbl;
             document.getElementById('email-lbl').textContent = data.email_lbl;

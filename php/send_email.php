@@ -47,7 +47,7 @@ try {
     $mail->SMTPAuth = true;
     $mail->Username = 'contacto@s-spin.com.mx';
     $mail->Password = 'Sspin2024*5689';
-    $mail->SMTPSecure = 'ssl'; // En PHP 7.4 se usa 'ssl' en lugar de PHPMailer::ENCRYPTION_SMTPS
+    $mail->SMTPSecure = 'ssl'; 
     $mail->Port = 465;
     $mail->CharSet = 'UTF-8';
 
