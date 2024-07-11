@@ -86,17 +86,28 @@ header {
     display: inline;
 }
 
-.btn-list button{
-    width: 2em;
+.btn-list .btn-en{
+    background-color: #000;
+    background-image: url(../icons/eng_flag.ico);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3em;
     height: 2em;
-    border-radius: 50%;
+    border: none;
+}
+
+.btn-list .btn-es{
+    background-color: #000;
+    background-image: url(../icons/esp_flag.ico);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3em;
+    height: 2em;
     border: none;
 }
 
 .languages .btn-list .active {
-    font-weight: bold; 
-    background-color: #000;
-    color: #eee;
+    background-color: #eee;
     transition: .5s;
 }
 
