@@ -35,6 +35,13 @@
     "telecom":"Telecommunications",
     "control":"Control",
     "s_facilities":"Electrical, electronic and special installations",
+    "special_install":"Special Installations",
+    "electric_install":"Electrical installations",
+    
+    "projct":"Project",
+    "installation":"Installation",
+    "mntnnce":"Maintenance",
+
 
     "archtc":"Architectural",
     "struct":"Structural",
@@ -74,6 +81,24 @@
     "ambnt":"Ambient sound",
     "pumpc":"Pump control",
     "alert":"Alerting system",
+
+    "feedrs":"Feeders calculation (main and secondary)",
+    "lightng":"Normal and emergency lighting",
+    "cntact_system":"Normal and regulated contact system",
+    "grnding":"Grounding system",
+    "arrstr":"Lightning arrester",
+    "shrt_crct":"Short circuit calculation",
+    "prtctiv_coord":"Protective device coordination calculation",
+
+    "chnnlng":"Channeling",
+    "cblng":"Cabling",
+    "brds_dstrbtn":"Installation and connection of distribution boards",
+    "cntrl_cntr":"Engine control centers",
+    "trnsfrmr":"Electrical transformers",
+    "arrstr_systms":"Lightning arrester systems",
+
+    "sbstns":"Substations",
+    "nrg_mntrng":"Energy monitoring",
 
     "name_lbl":"Name",
     "email_lbl":"E-mail",

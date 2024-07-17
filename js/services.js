@@ -101,12 +101,38 @@ function updateContent(){
         document.getElementById('indstr').textContent = data.indstr;
         document.getElementById('nrgsv').textContent = data.nrgsv;
 
-        document.getElementById('s-facilities').textContent = data.s_facilities;
+        document.getElementById('special-install').textContent = data.special_install;
         document.getElementById('firdt').textContent = data.firdt;
         document.getElementById('illmn').textContent = data.illmn;
         document.getElementById('ambnt').textContent = data.ambnt;
         document.getElementById('pumpc').textContent = data.pumpc;
         document.getElementById('alert').textContent = data.alert;
+
+        document.getElementById('electric-install').textContent = data.electric_install;
+
+        document.getElementById('project').textContent = data.projct;
+        document.getElementById('feeders').textContent = data.feedrs;
+        document.getElementById('lighting').textContent = data.lightng;
+        document.getElementById('contact-system').textContent = data.cntact_system;
+        document.getElementById('grounding').textContent = data.grnding;
+        document.getElementById('arrester').textContent = data.arrstr;
+        document.getElementById('short-circuit').textContent = data.shrt_crct;
+        document.getElementById('protective-device').textContent = data.prtctiv_coord;
+
+        document.getElementById('installation').textContent = data.installation;
+
+        document.getElementById('channeling').textContent = data.chnnlng;
+        document.getElementById('cabling').textContent = data.cblng;
+        document.getElementById('boards').textContent = data.brds_dstrbtn;
+        document.getElementById('engine-control').textContent = data.cntrl_cntr;
+        document.getElementById('transformer').textContent = data.trnsfrmr;
+        document.getElementById('arrester-system').textContent = data.arrstr_systms;
+
+        document.getElementById('maintenance').textContent = data.mntnnce;
+
+        document.getElementById('substations').textContent = data.sbstns;
+        document.getElementById('energy-monitoring').textContent = data.nrg_mntrng;
+
 
     })
     .catch(error => console.error("Error loading language file", error))

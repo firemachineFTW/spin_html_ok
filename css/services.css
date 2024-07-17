@@ -292,6 +292,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 3px;
 
 }
 
@@ -303,12 +304,14 @@ header {
      .container-serv{
         display: block;
         height: auto;
-        
     }
     
 }
 
 @media screen and (max-width: 992px) {
+    .container-serv .content .item{
+        display: block;
+    }
     .buttons{
         display: block;
         top: 3em;
@@ -318,31 +321,15 @@ header {
     }
 }
 
-@media screen and (max-width: 900px) {
-    
-}
-
-@media screen and (max-width: 800px) {
-    
-}
-
-@media screen and (max-width: 650px) {
-    .container-serv .content .item{
-        display: block;
-    }
-}
-
 @media screen and (max-height: 700px) {
     .btn_menu{
         width: 130px;
         height: 130px;
     }
-    
 }
 
 @media screen and (max-height: 600px) {
     .buttons{
         display: flex;
     }
-    
 }

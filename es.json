@@ -35,6 +35,12 @@
     "telecom":"Telecomunicaciones",
     "control":"Control",
     "s_facilities":"Instalaciones electricas, electronicas y especiales",
+    "special_install":"Instalaciones Especiales",
+    "electric_install":"Instalaciones electricas",
+    
+    "projct":"Proyecto",
+    "installation":"Instalación",
+    "mntnnce":"Mantenimiento",
 
     "archtc":"Arquitectónicos",
     "struct":"Estructurales",
@@ -80,6 +86,24 @@
     "ambnt":"Sonido ambiental",
     "pumpc":"Control de bombas",
     "alert":"Sistema de alarmas",
+
+    "feedrs":"Cálculo de alimentadores (principales y secundarios)",
+    "lightng":"Alumbrado normal y de emergencia",
+    "cntact_system":"Sistema de contacto normal y regulado",
+    "grnding":"Sistema de tierras",
+    "arrstr":"Pararrayos",
+    "shrt_crct":"Cálculo de corto circuito",
+    "prtctiv_coord":"Cálculo de coordinación de protectores",
+
+    "chnnlng":"Canalización",
+    "cblng":"Cableados",
+    "brds_dstrbtn":"Instalación y conexión de tableros de distribución",
+    "cntrl_cntr":"Centro de control de motores",
+    "trnsfrmr":"Transformadores",
+    "arrstr_systms":"Sistemas de pararrayos",
+    
+    "sbstns":"Subestaciones",
+    "nrg_mntrng":"Monitoreo de energía",
 
     "name_lbl":"Nombre",
     "email_lbl":"Correo electrónico",
